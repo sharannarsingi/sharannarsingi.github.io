@@ -1,0 +1,1 @@
+Replace src/App.jsx with App.jsx. Replace src/styles.css with styles.css. Copy public/stairwell.png into your project public/ folder. Keep main.jsx importing ./styles.css. The image is a full-page dark background layer with the visible staircase concentrated on the right; the CSS player is animated separately along the switchback path.
