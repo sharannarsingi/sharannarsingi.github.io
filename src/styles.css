@@ -1485,3 +1485,94 @@ footer {
   top: var(--player-y) !important;
   z-index: 56 !important;
 }
+
+/* ===== LOW-RESOLUTION GAME WORLD FIX ===== */
+
+@media (max-width: 760px) {
+
+  .game-world {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .game-art {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .stairwell-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  /* Restore the quote hidden by the old mobile CSS */
+  .stairwell-quote {
+    display: flex !important;
+    visibility: visible !important;
+    left: 63%;
+    top: 30%;
+    width: 34%;
+    min-height: 25%;
+    padding: 5px;
+    font-size: clamp(7px, 1.8vw, 10px);
+    gap: 3px;
+  }
+
+  .stairwell-door {
+    display: block !important;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 380px) {
+
+  .stairwell-quote {
+    left: 61%;
+    width: 37%;
+    font-size: 7px;
+    padding: 3px;
+  }
+
+}
+.player-sprite {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('/player-sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 800% 100%;
+  image-rendering: pixelated;
+}
+
+.is-moving .player-sprite {
+  animation: playerSpriteWalk 0.64s steps(7, end) infinite;
+}
+
+.is-idle .player-sprite {
+  animation: none;
+  background-position: 0 0;
+}
+
+@keyframes playerSpriteWalk {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}
+.stairwell-quote {
+  opacity: 1;
+}
+.stairwell-quote {
+   background: rgba(8, 5, 20, 1) !important;
+  opacity: 1 !important;
+  background: rgba(15, 7, 35, 0.97);
+  
+}
+
+.stairwell-quote span {
+  opacity: 0.9;
+}

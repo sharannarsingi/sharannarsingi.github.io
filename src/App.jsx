@@ -336,7 +336,7 @@ function App() {
 
           <div className="world-image-tint" />
 
-          <div className="stairwell-quote" aria-label="A life quote">
+          <div className="stairwell-quote" aria-label="A life quote" >
             <span>𝑷𝒓𝒆𝒅𝒊𝒄𝒕𝒊𝒏𝒈 𝒕𝒉𝒆 𝒇𝒖𝒕𝒖𝒓𝒆</span>
             <span>𝒊𝒔𝒏'𝒕 𝒎𝒂𝒈𝒊𝒄,</span>
             <span>𝒊𝒕'𝒔 A𝒓𝒕𝒊𝒇𝒊𝒄𝒊𝒂𝒍 I𝒏𝒕𝒆𝒍𝒍𝒊𝒈𝒆𝒏𝒄𝒆.</span>
