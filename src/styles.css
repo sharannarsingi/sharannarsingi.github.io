@@ -1615,3 +1615,50 @@ section,
 p {
   background-color: rgba(2, 7, 31, 0.45) !important;
 }
+/* Navbar */
+.topbar {
+  position: relative;
+  z-index: 100 !important;
+}
+
+/* Character */
+.player-overlay,
+.player-overlay .pixel-player {
+  position: relative;
+  z-index: 110 !important;
+}
+
+/* Other page content */
+main,
+section,
+.content,
+.page-content {
+  position: relative;
+  z-index: 1 !important;
+}
+/* Navbar */
+.topbar {
+  position: relative;
+  z-index: 100 !important;
+}
+
+/* Page content */
+main {
+  position: relative;
+  z-index: 1 !important;
+}
+
+/* HOME SECTION: Character above navbar */
+.home-active .player-overlay {
+  z-index: 110 !important;
+}
+
+/* OTHER SECTIONS: Navbar > Content > Character */
+.other-active .player-overlay {
+  z-index: 0 !important;
+}
+
+/* Character positioning */
+.player-overlay {
+  position: fixed;
+}

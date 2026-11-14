@@ -266,12 +266,12 @@ function App() {
 
   return (
     <div
-      className="app-shell"
+  className={`app-shell ${active === "home" ? "home-active" : "other-active"}`}
       style={{
-        "--journey-progress": `${progress}%`,
-        "--player-x": `${playerPosition.x}%`,
-        "--player-y": `${playerPosition.y}%`
-      }}
+    "--journey-progress": `${progress}%`,
+    "--player-x": `${playerPosition.x}%`,
+    "--player-y": `${playerPosition.y}%`
+  }}
     >
       <div className="scanlines" />
 
