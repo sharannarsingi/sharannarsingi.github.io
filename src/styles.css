@@ -1570,9 +1570,48 @@ footer {
    background: rgba(8, 5, 20, 1) !important;
   opacity: 1 !important;
   background: rgba(15, 7, 35, 0.97);
+
   
 }
 
 .stairwell-quote span {
   opacity: 0.9;
+}
+
+/* Keep the character behind all other elements */
+.player-overlay,
+.player-overlay .pixel-player {
+  z-index: 0 !important;
+}
+.topbar {
+  z-index: 55 !important;
+}
+
+.player-overlay,
+.player-overlay .pixel-player {
+  z-index: 56 !important;
+}
+/* Navbar */
+.topbar {
+  z-index: 55 !important;
+}
+
+/* Character */
+.player-overlay,
+.player-overlay .pixel-player {
+  z-index: 56 !important;
+}
+
+/* Other page content */
+main,
+section,
+.content,
+.page-content {
+  position: relative;
+  z-index: 57 !important;
+}
+
+/* Make text block backgrounds slightly more solid */
+p {
+  background-color: rgba(2, 7, 31, 0.45) !important;
 }
